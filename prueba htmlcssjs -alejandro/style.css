@@ -1,0 +1,279 @@
+<<<<<<< HEAD
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url("imagenes/w2logo.png") center center no-repeat fixed;
+  background-size: cover;
+  background-color: rgba(255, 248, 242, 0.95);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header, footer {
+  background-color: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section {
+  padding: 20px 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wafle-card {
+  perspective: 1000px;
+  cursor: pointer;
+  height: 320px;
+}
+
+.wafle-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.wafle-card.flipped .wafle-card-inner {
+  transform: rotateY(180deg);
+}
+
+.wafle-front, .wafle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.wafle-front {
+  background-color: #fff;
+}
+
+.wafle-front img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+.wafle-back {
+  background-color: #ffe0cb;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu, .pedido, .about {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff0e6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label, select, input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#resumen, #pedidoConfirmacion {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.instagram {
+  background-color: #E1306C;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+=====
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url("imagenes/w2logo.png") center center no-repeat fixed;
+  background-size: cover;
+  background-color: rgba(255, 248, 242, 0.95);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header, footer {
+  background-color: #ff6b6b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section {
+  padding: 20px 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wafle-card {
+  perspective: 1000px;
+  cursor: pointer;
+  height: 320px;
+}
+
+.wafle-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.wafle-card.flipped .wafle-card-inner {
+  transform: rotateY(180deg);
+}
+
+.wafle-front, .wafle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.wafle-front {
+  background-color: #fff;
+}
+
+.wafle-front img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+.wafle-back {
+  background-color: #ffe0cb;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu, .pedido, .about {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff0e6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label, select, input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#resumen, #pedidoConfirmacion {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+>>>>>>> 037bbb49de1c47779b113e016bc7c60e3a71806e

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waflelandia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Waflelandia</h1>
+    <p>¡Bienvenido al paraíso de los wafles!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tipos de Wafles</h2>
+      <div class="grid" id="wafleContainer"></div>
+    </section>
+
+    <section class="menu">
+      <h2>Arma tu Wafle</h2>
+      <label for="base">Base:</label>
+      <select id="base">
+        <option>Clásico</option>
+        <option>Chocolate</option>
+        <option>Vainilla</option>
+      </select>
+
+      <label for="salsa">Salsa:</label>
+      <select id="salsa">
+        <option>Chocolate</option>
+        <option>Caramelo</option>
+        <option>Frutilla</option>
+        <option>Manjar</option>
+      </select>
+
+      <label for="toping">Toping:</label>
+      <select id="toping">
+        <option>Frutilla</option>
+        <option>Crema</option>
+        <option>Chispas</option>
+        <option>Galletas</option>
+      </select>
+
+      <button onclick="mostrarResumenWafle()">Ver mi Wafle 🍓</button>
+      <p id="resumen"></p>
+    </section>
+
+    <section class="pedido">
+      <h2>Haz tu Pedido</h2>
+      <form id="formPedido">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required />
+
+        <label for="pedidoBase">Base del wafle:</label>
+        <select id="pedidoBase" required>
+          <option value="">-- Selecciona --</option>
+          <option>Clásico</option>
+          <option>Chocolate</option>
+          <option>Vainilla</option>
+        </select>
+
+        <label for="pedidoSalsa">Salsa:</label>
+        <select id="pedidoSalsa" required>
+          <option value="">-- Selecciona --</option>
+          <option>Chocolate</option>
+          <option>Caramelo</option>
+          <option>Frutilla</option>
+          <option>Manjar</option>
+        </select>
+
+        <label for="pedidoToping">Toping:</label>
+        <select id="pedidoToping" required>
+          <option value="">-- Selecciona --</option>
+          <option>Frutilla</option>
+          <option>Crema</option>
+          <option>Chispas</option>
+          <option>Galletas</option>
+        </select>
+
+        <button type="submit">Enviar pedido 🧇</button>
+        <p id="pedidoConfirmacion"></p>
+      </form>
+    </section>
+
+    <section class="about">
+      <h2>Sobre Nosotros</h2>
+      <p>En Waflelandia vivimos para endulzarte la vida 🧇✨</p>
+      <p>📍 Calle OCEANO ARTICO 123, Ciudad Sabor</p>
+      <p>📞 +56 9 3440xxxx · 📧 contacto@waflelandia.cl</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Waflelandia. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
